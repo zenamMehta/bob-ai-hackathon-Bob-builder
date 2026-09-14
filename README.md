@@ -10,10 +10,10 @@ Checker
 
 | Field | Value |
 |---|---|
-| **Team Name** | [Your Team Name] |
-| **Track** | [AI / DevOps / Sustainability / Open] |
-| **Team Lead** | [Name] — [email@ibm.com] |
-| **Members** | [Name 1], [Name 2], [Name 3] |
+| **Team Name** | Bobs builder |
+| **Track** | Pharma & Biotech |
+| **Team Lead** | Manan Manojkumar Patel — 25me073@charusat.edu.in |
+| **Members** | Zenam Rasheshbhai Mehta, Keval Desai, Aum Umang Pathak |
 
 ---
 
@@ -21,25 +21,24 @@ Checker
 
 > In 2–3 sentences: What problem does your project solve? Who experiences this problem?
 
-[Describe the real-world problem your project addresses. Be specific about who the user is and what pain point they face.]
-
+Pharmacovigilance teams must monitor 20M+ adverse event reports in FAERS to catch dangerous drug safety signals before they cause harm, Vioxx caused 27,000+ heart attacks before its signal was formally acted on. Regulatory affairs teams face a parallel problem: a CTD dossier spans 100,000+ pages across five modules, and a single missing or incorrectly named section triggers a rejection costing 6-12 months and $50-100M. Both teams face the same root cause: too much complex, high-stakes data for manual review to catch reliably.
 ---
 
 ## 💡 Solution
 
 > In 2–3 sentences: What did you build? How does it solve the problem above?
 
-[Describe your solution clearly. Explain the core mechanism — what makes it work.]
+A single Streamlit application with two modes, built using IBM Bob. Signal Detection computes the Proportional Reporting Ratio and chi-squared statistic for every drug-event pair in an adverse event dataset, flagging signals against standard pharmacovigilance thresholds, including correct handling of drug-exclusive reactions as infinite-PRR signals while guarding against single-report flukes. Submission Readiness compares a CTD dossier outline against the ICH M4 required structure using fuzzy string matching, scoring completeness per module and generating a gap report with regulator-facing risk notes.
 
 ---
 
 ## ✨ Key Features
 
-- **Feature 1:** [Brief description — e.g., "Real-time anomaly detection using watsonx.ai"]
-- **Feature 2:** [Brief description]
-- **Feature 3:** [Brief description]
-- **Feature 4:** [Optional]
-- **Feature 5:** [Optional]
+- **Feature 1:** Statistical signal detection: PRR and chi-squared calculation per drug-event pair, following the Evans (2001) pharmacovigilance method
+- **Feature 2:** Infinite-PRR handling with a fluke guard: drug-exclusive reactions are treated as the strongest signal type, but still require a minimum case count before being flagged
+- **Feature 3:** ICH M4 fuzzy-matched readiness checking: dossier sections are matched against the required CTD structure even when naming varies, with per-module completeness scoring
+- **Feature 4:** Regulator-facing gap reports: every missing section comes with a plain-English risk note explaining why it matters
+- **Feature 5:** Fully offline, rule-based summaries: both modes generate plain-English narrative summaries with zero external API calls, and accept file upload or bundled synthetic data
 
 ---
 
