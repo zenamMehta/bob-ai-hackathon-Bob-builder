@@ -1,6 +1,7 @@
-https://youtu.be/your-demo-video-link-here
+https://youtu.be/PENDING
 
-Replace the URL above with a link to your demo video.
+Demo video has not been recorded yet.
+Once recorded, replace the URL above with a link to the hosted video.
 
 Accepted platforms:
   - YouTube (public or unlisted)

@@ -1,79 +1,73 @@
 # Setup Guide
 
-> **This file is read by the automated evaluation pipeline. Be precise and complete.**
-
 ## Prerequisites
 
-Before you begin, ensure you have the following installed:
-
-- [ ] [e.g., Python 3.11+]
-- [ ] [e.g., Node.js 18+]
-- [ ] [e.g., Docker Desktop]
-- [ ] [e.g., An IBM Cloud account with watsonx.ai access]
-
-## Environment Variables
-
-Copy `.env.example` to `.env` and fill in the values:
-
-```bash
-cp .env.example .env
-```
-
-| Variable | Description | Required |
-|---|---|---|
-| `WATSONX_API_KEY` | Your IBM watsonx.ai API key | Yes |
-| `WATSONX_PROJECT_ID` | Your watsonx.ai project ID | Yes |
-| `DATABASE_URL` | PostgreSQL connection string | Yes |
-| `SLACK_WEBHOOK_URL` | Slack webhook for alerts | No |
+- Python **3.10 or higher**
+- `pip` (comes with Python)
+- No API keys, databases, or environment variables required
 
 ## Installation
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/[your-org]/[your-repo].git
-cd [your-repo]
+git clone https://github.com/zenamMehta/bob-ai-hackathon-Bob-builder.git
+cd bob-ai-hackathon-Bob-builder
 
-# 2. Install backend dependencies
-[your command — e.g.: pip install -r requirements.txt]
+# 2. (Optional) Create a virtual environment
+python -m venv .venv
+source .venv/bin/activate      # macOS / Linux
+# .venv\Scripts\activate       # Windows
 
-# 3. Install frontend dependencies (if applicable)
-[your command — e.g.: cd frontend && npm install]
-
-# 4. Set up the database (if applicable)
-[your command — e.g.: python manage.py migrate]
+# 3. Install dependencies
+pip install -r requirements.txt
 ```
 
 ## Running the Application
 
 ```bash
-# Start the backend
-[your command — e.g.: uvicorn app.main:app --reload]
-
-# Start the frontend (in a separate terminal, if applicable)
-[your command — e.g.: cd frontend && npm run dev]
+streamlit run src/app.py
 ```
 
-The application will be available at: `http://localhost:[PORT]`
+The app will open automatically in your browser at `http://localhost:8501`.
 
-## Running Tests
+Both tabs (**Signal Detection** and **Submission Readiness**) work immediately
+using the bundled synthetic data — no file upload is needed to explore the demo.
 
-```bash
-[your test command — e.g.: pytest tests/ -v]
+## Using Your Own Data
+
+**Mode 1 — Signal Detection:**  
+Upload a CSV with at least these columns: `report_id`, `drug_name`, `reaction`.  
+Optional columns: `patient_age`, `patient_sex`, `report_date`, `outcome_severity`.
+
+**Mode 2 — Submission Readiness:**  
+Upload a JSON file with a top-level `"sections"` key containing a list of
+section-name strings:
+
+```json
+{
+  "sections": [
+    "Table of Contents",
+    "Investigator's Brochure",
+    "Safety Pharmacology"
+  ]
+}
 ```
 
-## Quick Demo (Optional)
+## Dependencies
 
-If you have a demo script or sample data to showcase the project quickly:
-
-```bash
-[e.g.: python demo/seed_demo_data.py]
-[e.g.: open http://localhost:8000/demo]
-```
+| Package | Version | Purpose |
+|---|---|---|
+| `streamlit` | 1.35.0 | Web UI framework |
+| `pandas` | 2.2.2 | Data loading and tabular processing |
+| `scipy` | 1.13.1 | Chi-squared statistic (`chi2_contingency`) |
+| `rapidfuzz` | 3.9.3 | Fuzzy string matching for dossier sections |
+| `pyyaml` | 6.0.2 | Parsing `config/ctd_checklist.yaml` |
 
 ## Troubleshooting
 
 | Issue | Solution |
 |---|---|
-| [e.g., `ModuleNotFoundError`] | [e.g., Run `pip install -r requirements.txt` again] |
-| [e.g., Database connection refused] | [e.g., Ensure PostgreSQL is running: `docker compose up db`] |
-| [e.g., watsonx.ai 401 error] | [e.g., Check `WATSONX_API_KEY` in your `.env` file] |
+| `ModuleNotFoundError` | Run `pip install -r requirements.txt` again, or activate your virtual environment. |
+| App doesn't open in browser | Navigate to `http://localhost:8501` manually. |
+| `ValueError: Input data is missing required column(s)` | Check that your CSV has `report_id`, `drug_name`, and `reaction` columns. |
+| `KeyError: 'sections'` | Your dossier JSON must have a top-level `"sections"` key. |

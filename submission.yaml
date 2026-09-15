@@ -1,69 +1,83 @@
 # =============================================================================
 # HACKATHON SUBMISSION METADATA
 # =============================================================================
-# Instructions:
-#   - Fill in ALL required fields (marked with # REQUIRED)
-#   - Optional fields can be left as empty strings ""
-#   - Do NOT rename this file — the evaluation pipeline reads it by name
-#   - Use double quotes around all string values
-# =============================================================================
 
 team:
-  name: "Bobs Builder"                             # REQUIRED — e.g., "Orion Squad"
-  track: "Pharma and Biotech"                            # REQUIRED — one of: AI | DevOps | Sustainability | Open
+  name: "Bobs Builder"
+  track: "AI"
   lead:
-    name: "Manan Patel"                           # REQUIRED — e.g., "Alice Chen"
-    email: "25me073@charusat.edu.in"                          # REQUIRED — e.g., "alice.chen@ibm.com"
+    name: "Manan Patel"
+    email: "25me073@charusat.edu.in"
   members:
-    - name: "Zenam Rasheshbhai Mehta"                         # REQUIRED — Team member 1
+    - name: "Zenam Rasheshbhai Mehta"
       email: "zrmehta2003@gmail.com"
-    - name: "Keval Doshi"                         # Add more members by copying the two lines above
+    - name: "Keval Doshi"
       email: ""
     - name: "Aum Patel"
       email: ""
 
 submission:
-  title: "Drug Safety Signal Detector & Regulatory Submission Readiness Checker"                            # REQUIRED — Project display name, e.g., "SmartOps Dashboard"
+  title: "Drug Safety Signal Detector & Regulatory Submission Readiness Checker"
 
-  problem_statement: >                 # REQUIRED — 1-3 sentences. What problem? Who has it?
-    Replace this text with a concise description of the real-world problem
-    your project addresses and who experiences it.
+  problem_statement: >
+    Pharmacovigilance teams must monitor 20M+ adverse event reports in FAERS to
+    catch dangerous drug safety signals before they cause harm — Vioxx caused
+    27,000+ heart attacks before its signal was formally acted on. Regulatory
+    affairs teams face a parallel problem: a CTD dossier spans 100,000+ pages
+    across five modules, and a single missing or incorrectly named section
+    triggers a rejection costing 6–12 months and $50–100M. Both teams face the
+    same root cause: too much complex, high-stakes data for manual review to
+    catch reliably.
 
-  solution_summary: >                  # REQUIRED — 1-3 sentences. What did you build?
-    Replace this text with a clear description of your solution
-    and how it addresses the problem above.
+  solution_summary: >
+    A single Streamlit application with two modes, built using IBM Bob. Signal
+    Detection computes the Proportional Reporting Ratio (PRR) and chi-squared
+    statistic for every drug-event pair in an adverse event dataset, flagging
+    signals against standard pharmacovigilance thresholds — including correct
+    handling of drug-exclusive reactions as infinite-PRR signals while guarding
+    against single-report flukes. Submission Readiness compares a CTD dossier
+    outline against the ICH M4 required structure using fuzzy string matching,
+    scoring completeness per module and generating a gap report with
+    regulator-facing risk notes.
 
-  key_features:                        # REQUIRED — List 3 to 5 specific features you implemented
-    - ""                               # e.g., "Real-time pipeline anomaly detection using watsonx.ai"
-    - ""
-    - ""
-    - ""                               # optional 4th
-    - ""                               # optional 5th
+  key_features:
+    - "PRR and chi-squared disproportionality analysis per drug-event pair (Evans 2001 method)"
+    - "PRR = Inf (event exclusivity) handling with chi-squared waiver and case-count fluke guard"
+    - "ICH M4 CTD fuzzy section matching with per-module completeness scoring"
+    - "Regulator-facing gap reports with plain-English risk notes per missing section"
+    - "Fully offline rule-based summaries — zero external API calls, works on synthetic or uploaded data"
 
   tech_stack:
-    languages: []                      # REQUIRED — e.g., ["Python", "TypeScript"]
-    frameworks: []                     # e.g., ["FastAPI", "React"]
-    ibm_technologies: []               # e.g., ["watsonx.ai", "IBM Bob", "IBM Cloud Functions"]
-    databases: []                      # e.g., ["PostgreSQL", "Redis"]
-    other: []                          # e.g., ["Docker", "GitHub Actions", "Slack API"]
+    languages: ["Python"]
+    frameworks: ["Streamlit"]
+    ibm_technologies: ["IBM Bob"]
+    databases: []
+    other: ["pandas", "scipy", "rapidfuzz", "PyYAML", "GitHub Actions"]
 
-  what_we_are_most_proud_of: >         # Optional but recommended — guides judges to your best work
-    Replace with what aspect of the submission you consider strongest
-    and want judges to pay special attention to.
+  what_we_are_most_proud_of: >
+    The rigorous, standards-faithful implementation of the Evans (2001) PRR
+    algorithm — including principled handling of the PRR = Inf edge case
+    (event exclusivity), the chi-squared waiver for degenerate 2x2 tables,
+    and the three-threshold flagging logic. The result is pharmacovigilance
+    signal detection that a real regulatory scientist would recognise as
+    methodologically sound, not just a demonstration.
 
-  known_limitations: >                 # Optional but recommended — be honest about gaps
-    Replace with any known limitations, incomplete features,
-    or shortcuts taken due to time constraints.
+  known_limitations: >
+    No authentication — this is a local prototype, not production-ready.
+    The row-by-row loop in compute_signals is clear and correct at demo scale
+    but will be slow on full FAERS (millions of rows); a vectorised pandas
+    implementation would be needed for production. Fuzzy matching is greedy
+    (first-match), which can occasionally mis-assign sections when two required
+    names are very similar. No demo video has been recorded yet.
 
 # =============================================================================
 # ARTIFACT LOCATIONS
-# These paths are relative to the repo root. Only change if you moved files.
 # =============================================================================
 artifacts:
   source_code: "src/"
   setup_guide: "docs/setup-guide.md"
   architecture_doc: "docs/architecture.md"
-  demo_video: "demo/demo-video-link.txt"   # URL to hosted video (YouTube, Loom, Box)
-  live_demo: "demo/live-demo-url.txt"      # URL to deployed demo (optional)
+  demo_video: "demo/demo-video-link.txt"
+  live_demo: "demo/live-demo-url.txt"
   screenshots: "demo/screenshots/"
   presentation: "presentation/"
