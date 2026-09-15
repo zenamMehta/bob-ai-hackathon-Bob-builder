@@ -48,9 +48,9 @@ submission:
     - "Fully offline rule-based summaries — zero external API calls, works on synthetic or uploaded data"
 
   tech_stack:
-    languages: ["Python"]
-    frameworks: ["Streamlit"]
-    ibm_technologies: ["IBM Bob"]
+    languages: Python
+    frameworks: Streamlit
+    ibm_technologies: IBM BoB
     databases: []
     other: ["pandas", "scipy", "rapidfuzz", "PyYAML", "GitHub Actions"]
 
