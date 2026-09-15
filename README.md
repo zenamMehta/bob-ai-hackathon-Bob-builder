@@ -9,7 +9,7 @@ addressing the **Pharma & Biotech** problem statement.
 
 | Field | Value |
 |---|---|
-| **Team Name** | Bobs Builder |
+| **Team Name** | Bob Builder |
 | **Track** | Pharma & Biotech |
 | **Team Lead** | Manan Manojkumar Patel — 25me073@charusat.edu.in |
 | **Members** | Zenam Rasheshbhai Mehta, Keval Desai, Aum Umang Pathak |
