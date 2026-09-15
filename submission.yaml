@@ -11,10 +11,10 @@ team:
   members:
     - name: "Zenam Rasheshbhai Mehta"
       email: "zrmehta2003@gmail.com"
-    - name: "Keval Doshi"
-      email: ""
-    - name: "Aum Patel"
-      email: ""
+    - name: "Keval Prashant Desai"
+      email: "25me009@charusat.edu.in"
+    - name: "Aum Umangbhai Pathak"
+      email: "25dcs101@charusat.edu.in"
 
 submission:
   title: "Drug Safety Signal Detector & Regulatory Submission Readiness Checker"
