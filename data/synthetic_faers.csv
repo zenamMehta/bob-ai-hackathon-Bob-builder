@@ -1,0 +1,201 @@
+report_id,drug_name,reaction,patient_age,patient_sex,report_date,outcome_severity
+RPT-0001,atorvastatin,myopathy,52,M,2020-03-14,recovered
+RPT-0002,atorvastatin,myopathy,61,F,2020-06-22,recovering
+RPT-0003,atorvastatin,myopathy,47,M,2021-01-09,recovered
+RPT-0004,atorvastatin,myopathy,68,F,2021-04-30,not recovered
+RPT-0005,atorvastatin,myopathy,55,M,2021-09-17,recovered
+RPT-0006,atorvastatin,myopathy,73,F,2022-02-11,recovering
+RPT-0007,atorvastatin,myopathy,44,M,2022-07-05,recovered
+RPT-0008,atorvastatin,myopathy,59,F,2020-11-28,recovered
+RPT-0009,atorvastatin,myopathy,66,M,2021-05-14,not recovered
+RPT-0010,atorvastatin,myopathy,50,F,2021-12-03,recovering
+RPT-0011,atorvastatin,myopathy,71,M,2022-04-19,recovered
+RPT-0012,atorvastatin,myopathy,48,F,2020-08-07,recovered
+RPT-0013,atorvastatin,myopathy,63,M,2021-10-25,recovering
+RPT-0014,atorvastatin,myopathy,57,F,2022-01-13,recovered
+RPT-0015,atorvastatin,myopathy,42,M,2020-05-06,recovered
+RPT-0016,atorvastatin,myopathy,69,F,2021-07-20,not recovered
+RPT-0017,atorvastatin,myopathy,54,M,2022-03-08,recovering
+RPT-0018,atorvastatin,myopathy,76,F,2020-09-16,recovered
+RPT-0019,atorvastatin,myopathy,49,M,2021-11-22,recovered
+RPT-0020,atorvastatin,myopathy,62,F,2022-05-30,recovering
+RPT-0021,atorvastatin,myopathy,58,M,2020-12-04,recovered
+RPT-0022,atorvastatin,myopathy,45,F,2021-02-18,recovered
+RPT-0023,atorvastatin,myopathy,70,M,2021-08-11,not recovered
+RPT-0024,atorvastatin,myopathy,53,F,2022-06-27,recovered
+RPT-0025,atorvastatin,myopathy,67,M,2020-04-02,recovering
+RPT-0026,atorvastatin,myopathy,41,F,2021-03-15,recovered
+RPT-0027,atorvastatin,myopathy,74,M,2021-06-29,recovered
+RPT-0028,atorvastatin,myopathy,56,F,2022-08-14,recovering
+RPT-0029,atorvastatin,myopathy,60,M,2020-10-21,recovered
+RPT-0030,atorvastatin,myopathy,46,F,2021-09-04,recovered
+RPT-0031,atorvastatin,myopathy,64,M,2022-02-28,not recovered
+RPT-0032,atorvastatin,myopathy,51,F,2020-07-13,recovering
+RPT-0033,atorvastatin,myopathy,72,M,2021-01-27,recovered
+RPT-0034,atorvastatin,myopathy,43,F,2022-09-10,recovered
+RPT-0035,atorvastatin,myopathy,65,M,2020-02-19,recovering
+RPT-0036,atorvastatin,rhabdomyolysis,58,M,2020-05-11,fatal
+RPT-0037,atorvastatin,rhabdomyolysis,63,F,2021-03-07,not recovered
+RPT-0038,atorvastatin,rhabdomyolysis,71,M,2021-10-14,recovering
+RPT-0039,atorvastatin,rhabdomyolysis,54,F,2022-01-22,not recovered
+RPT-0040,atorvastatin,rhabdomyolysis,67,M,2022-06-09,fatal
+RPT-0041,atorvastatin,rhabdomyolysis,49,F,2020-11-30,not recovered
+RPT-0042,clopidogrel,thrombocytopenia,62,M,2020-04-17,not recovered
+RPT-0043,clopidogrel,thrombocytopenia,55,F,2020-09-03,recovering
+RPT-0044,clopidogrel,thrombocytopenia,70,M,2021-02-26,not recovered
+RPT-0045,clopidogrel,thrombocytopenia,48,F,2021-07-14,recovered
+RPT-0046,clopidogrel,thrombocytopenia,66,M,2021-11-08,not recovered
+RPT-0047,clopidogrel,thrombocytopenia,53,F,2022-03-21,recovering
+RPT-0048,clopidogrel,thrombocytopenia,74,M,2022-07-30,not recovered
+RPT-0049,clopidogrel,thrombocytopenia,41,F,2020-06-15,recovered
+RPT-0050,clopidogrel,thrombocytopenia,59,M,2020-12-28,recovering
+RPT-0051,clopidogrel,thrombocytopenia,65,F,2021-04-05,not recovered
+RPT-0052,clopidogrel,thrombocytopenia,47,M,2021-08-19,recovered
+RPT-0053,clopidogrel,thrombocytopenia,71,F,2022-02-07,not recovered
+RPT-0054,clopidogrel,thrombocytopenia,56,M,2022-05-14,recovering
+RPT-0055,clopidogrel,thrombocytopenia,44,F,2020-08-22,recovered
+RPT-0056,clopidogrel,thrombocytopenia,68,M,2021-01-11,not recovered
+RPT-0057,clopidogrel,thrombocytopenia,52,F,2021-06-30,recovering
+RPT-0058,clopidogrel,thrombocytopenia,77,M,2021-12-17,not recovered
+RPT-0059,clopidogrel,thrombocytopenia,43,F,2022-04-04,recovered
+RPT-0060,clopidogrel,thrombocytopenia,60,M,2022-08-11,recovering
+RPT-0061,clopidogrel,thrombocytopenia,50,F,2020-10-09,not recovered
+RPT-0062,clopidogrel,thrombocytopenia,73,M,2021-03-23,recovering
+RPT-0063,clopidogrel,thrombocytopenia,46,F,2021-09-06,recovered
+RPT-0064,clopidogrel,thrombocytopenia,64,M,2022-01-18,not recovered
+RPT-0065,clopidogrel,thrombocytopenia,57,F,2020-07-27,recovering
+RPT-0066,clopidogrel,thrombocytopenia,39,M,2021-05-10,recovered
+RPT-0067,metformin,lactic acidosis,69,M,2020-03-05,fatal
+RPT-0068,metformin,lactic acidosis,58,F,2020-08-18,not recovered
+RPT-0069,metformin,lactic acidosis,74,M,2021-01-30,fatal
+RPT-0070,metformin,lactic acidosis,63,F,2021-06-12,not recovered
+RPT-0071,metformin,lactic acidosis,80,M,2021-10-25,fatal
+RPT-0072,metformin,lactic acidosis,55,F,2022-02-14,recovering
+RPT-0073,metformin,lactic acidosis,71,M,2022-06-28,not recovered
+RPT-0074,metformin,lactic acidosis,67,F,2020-05-09,fatal
+RPT-0075,metformin,lactic acidosis,50,M,2020-11-22,not recovered
+RPT-0076,metformin,lactic acidosis,76,F,2021-04-07,fatal
+RPT-0077,metformin,lactic acidosis,62,M,2021-08-20,not recovered
+RPT-0078,metformin,lactic acidosis,48,F,2022-01-03,recovering
+RPT-0079,metformin,lactic acidosis,83,M,2022-05-16,fatal
+RPT-0080,metformin,lactic acidosis,57,F,2020-09-29,not recovered
+RPT-0081,metformin,lactic acidosis,72,M,2021-02-11,fatal
+RPT-0082,metformin,lactic acidosis,44,F,2021-07-24,recovering
+RPT-0083,metformin,lactic acidosis,68,M,2022-03-08,not recovered
+RPT-0084,metformin,lactic acidosis,53,F,2020-06-21,fatal
+RPT-0085,warfarin,bleeding,65,M,2020-04-14,not recovered
+RPT-0086,warfarin,bleeding,58,F,2020-10-27,recovering
+RPT-0087,warfarin,bleeding,72,M,2021-03-09,fatal
+RPT-0088,warfarin,bleeding,49,F,2021-07-22,not recovered
+RPT-0089,warfarin,bleeding,66,M,2021-12-05,recovering
+RPT-0090,warfarin,bleeding,54,F,2022-02-18,not recovered
+RPT-0091,warfarin,bleeding,78,M,2022-06-01,fatal
+RPT-0092,warfarin,bleeding,43,F,2020-08-15,recovering
+RPT-0093,warfarin,bleeding,61,M,2021-01-28,not recovered
+RPT-0094,warfarin,bleeding,70,F,2021-05-12,recovering
+RPT-0095,warfarin,bleeding,47,M,2021-09-25,not recovered
+RPT-0096,warfarin,bleeding,55,F,2022-01-08,recovering
+RPT-0097,warfarin,bleeding,74,M,2022-05-21,not recovered
+RPT-0098,warfarin,bleeding,42,F,2020-07-04,recovered
+RPT-0099,warfarin,bleeding,68,M,2020-12-17,not recovered
+RPT-0100,warfarin,bleeding,53,F,2021-04-01,recovering
+RPT-0101,warfarin,bleeding,79,M,2021-08-14,fatal
+RPT-0102,warfarin,bleeding,46,F,2021-11-27,not recovered
+RPT-0103,warfarin,bleeding,63,M,2022-04-11,recovering
+RPT-0104,warfarin,bleeding,57,F,2022-07-24,not recovered
+RPT-0105,lisinopril,dry cough,45,M,2020-02-08,recovered
+RPT-0106,lisinopril,dry cough,59,F,2020-07-21,recovered
+RPT-0107,lisinopril,dry cough,52,M,2020-12-04,recovered
+RPT-0108,lisinopril,dry cough,67,F,2021-03-18,recovering
+RPT-0109,lisinopril,dry cough,41,M,2021-08-01,recovered
+RPT-0110,lisinopril,dry cough,74,F,2021-11-14,recovered
+RPT-0111,lisinopril,dry cough,48,M,2022-01-27,recovered
+RPT-0112,lisinopril,dry cough,63,F,2022-05-10,recovering
+RPT-0113,lisinopril,dry cough,56,M,2020-04-23,recovered
+RPT-0114,lisinopril,dry cough,70,F,2020-09-06,recovered
+RPT-0115,lisinopril,dry cough,43,M,2021-01-20,recovering
+RPT-0116,lisinopril,dry cough,58,F,2021-06-03,recovered
+RPT-0117,lisinopril,dry cough,65,M,2021-10-16,recovered
+RPT-0118,lisinopril,dry cough,49,F,2022-02-28,recovering
+RPT-0119,lisinopril,dry cough,76,M,2022-06-12,recovered
+RPT-0120,lisinopril,dry cough,54,F,2020-05-26,recovered
+RPT-0121,lisinopril,dry cough,61,M,2020-11-08,recovered
+RPT-0122,lisinopril,dry cough,46,F,2021-04-22,recovering
+RPT-0123,lisinopril,dry cough,72,M,2021-09-05,recovered
+RPT-0124,lisinopril,dry cough,38,F,2022-01-19,recovered
+RPT-0125,lisinopril,dry cough,68,M,2022-04-03,recovered
+RPT-0126,lisinopril,dry cough,55,F,2020-08-17,recovering
+RPT-0127,sertraline,insomnia,34,F,2020-03-11,recovered
+RPT-0128,sertraline,insomnia,29,M,2020-08-24,recovering
+RPT-0129,sertraline,insomnia,42,F,2021-01-06,recovered
+RPT-0130,sertraline,insomnia,38,M,2021-05-20,recovered
+RPT-0131,sertraline,insomnia,51,F,2021-09-02,recovering
+RPT-0132,sertraline,insomnia,45,M,2021-12-15,recovered
+RPT-0133,sertraline,insomnia,33,F,2022-03-28,recovered
+RPT-0134,sertraline,insomnia,56,M,2022-07-10,recovering
+RPT-0135,sertraline,insomnia,27,F,2020-06-06,recovered
+RPT-0136,sertraline,insomnia,48,M,2020-11-19,recovered
+RPT-0137,sertraline,insomnia,37,F,2021-04-03,recovering
+RPT-0138,sertraline,insomnia,61,M,2021-07-17,recovered
+RPT-0139,sertraline,insomnia,44,F,2022-02-01,recovered
+RPT-0140,sertraline,insomnia,30,M,2022-05-14,recovering
+RPT-0141,sertraline,insomnia,53,F,2020-09-27,recovered
+RPT-0142,atorvastatin,headache,55,M,2020-04-08,recovered
+RPT-0143,atorvastatin,nausea,48,F,2020-09-21,recovered
+RPT-0144,atorvastatin,fatigue,62,M,2021-02-03,recovering
+RPT-0145,atorvastatin,dizziness,39,F,2021-06-17,recovered
+RPT-0146,clopidogrel,headache,57,M,2020-05-30,recovered
+RPT-0147,clopidogrel,nausea,44,F,2020-11-12,recovered
+RPT-0148,clopidogrel,rash,66,M,2021-03-26,recovering
+RPT-0149,clopidogrel,bleeding,52,F,2021-08-09,not recovered
+RPT-0150,metformin,nausea,58,M,2020-02-22,recovered
+RPT-0151,metformin,vomiting,45,F,2020-07-06,recovered
+RPT-0152,metformin,abdominal pain,71,M,2021-01-19,recovering
+RPT-0153,metformin,diarrhoea,63,F,2021-05-03,recovered
+RPT-0154,lisinopril,headache,50,M,2020-06-16,recovered
+RPT-0155,lisinopril,oedema,74,F,2020-12-29,not recovered
+RPT-0156,lisinopril,dizziness,43,M,2021-04-13,recovered
+RPT-0157,omeprazole,headache,38,F,2020-03-27,recovered
+RPT-0158,omeprazole,nausea,52,M,2020-08-10,recovered
+RPT-0159,omeprazole,abdominal pain,67,F,2021-02-24,recovering
+RPT-0160,omeprazole,fatigue,45,M,2021-07-08,recovered
+RPT-0161,omeprazole,diarrhoea,59,F,2021-11-21,recovered
+RPT-0162,omeprazole,dizziness,41,M,2022-03-06,recovering
+RPT-0163,amoxicillin,rash,28,F,2020-04-19,recovered
+RPT-0164,amoxicillin,nausea,35,M,2020-09-02,recovered
+RPT-0165,amoxicillin,anaphylaxis,19,F,2021-01-15,not recovered
+RPT-0166,amoxicillin,vomiting,47,M,2021-05-29,recovered
+RPT-0167,amoxicillin,diarrhoea,33,F,2021-10-12,recovered
+RPT-0168,amoxicillin,headache,52,M,2022-02-25,recovering
+RPT-0169,sertraline,nausea,31,F,2020-05-09,recovered
+RPT-0170,sertraline,fatigue,43,M,2020-10-22,recovering
+RPT-0171,sertraline,headache,58,F,2021-03-07,recovered
+RPT-0172,sertraline,dizziness,26,M,2021-07-20,recovered
+RPT-0173,warfarin,fatigue,64,F,2020-06-03,recovered
+RPT-0174,warfarin,headache,51,M,2020-11-16,recovering
+RPT-0175,warfarin,nausea,77,F,2021-04-01,recovered
+RPT-0176,warfarin,dizziness,48,M,2021-08-15,recovered
+RPT-0177,metoprolol,bradycardia,66,M,2020-03-29,not recovered
+RPT-0178,metoprolol,bradycardia,72,F,2020-09-11,recovering
+RPT-0179,metoprolol,bradycardia,59,M,2021-02-24,not recovered
+RPT-0180,metoprolol,bradycardia,45,F,2021-07-08,recovered
+RPT-0181,metoprolol,fatigue,54,M,2021-11-21,recovering
+RPT-0182,metoprolol,dizziness,68,F,2022-03-05,recovered
+RPT-0183,metoprolol,headache,41,M,2022-07-18,recovered
+RPT-0184,prednisone,hyperglycaemia,57,F,2020-04-12,not recovered
+RPT-0185,prednisone,hyperglycaemia,63,M,2020-10-25,not recovered
+RPT-0186,prednisone,hyperglycaemia,71,F,2021-03-09,not recovered
+RPT-0187,prednisone,oedema,49,M,2021-08-22,recovering
+RPT-0188,prednisone,fatigue,55,F,2022-01-05,recovered
+RPT-0189,prednisone,insomnia,62,M,2022-05-18,recovering
+RPT-0190,lisinopril,liver enzyme elevation,60,F,2020-07-01,not recovered
+RPT-0191,omeprazole,liver enzyme elevation,53,M,2020-12-14,recovering
+RPT-0192,amoxicillin,liver enzyme elevation,38,F,2021-05-28,not recovered
+RPT-0193,metoprolol,palpitations,74,M,2021-09-10,not recovered
+RPT-0194,warfarin,palpitations,66,F,2022-02-23,recovering
+RPT-0195,sertraline,palpitations,39,M,2020-06-07,recovering
+RPT-0196,clopidogrel,fatigue,58,F,2021-01-20,recovered
+RPT-0197,atorvastatin,liver enzyme elevation,69,M,2021-06-04,not recovered
+RPT-0198,metformin,headache,46,F,2021-10-17,recovered
+RPT-0199,prednisone,rash,52,M,2022-04-01,recovered
+RPT-0200,amoxicillin,rash,24,F,2020-11-14,recovered
